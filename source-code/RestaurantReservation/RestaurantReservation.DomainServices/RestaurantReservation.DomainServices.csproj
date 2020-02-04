@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>c5c846a2-87cd-4eb1-a2c9-062df7922b94</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantReservation.Core\RestaurantReservation.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantReservation.API", "RestaurantReservation.API\RestaurantReservation.API.csproj", "{2F17D83E-ACAE-409D-9DAF-C7257F97A32E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantReservation.Core", "RestaurantReservation.Core\RestaurantReservation.Core.csproj", "{C293E217-A9E7-430E-9675-94CFCE97A554}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantReservation.DomainServices", "RestaurantReservation.DomainServices\RestaurantReservation.DomainServices.csproj", "{65168BD4-4235-4E56-B205-9C708339339C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantReservation.ApplicationServices", "RestaurantReservation.ApplicationServices\RestaurantReservation.ApplicationServices.csproj", "{4DEF2221-CB39-4EDA-A776-B1E788B4D160}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantReservation.Infrastructure", "RestaurantReservation.Infrastructure\RestaurantReservation.Infrastructure.csproj", "{35844043-A2A0-490E-9144-81A4E248A190}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RestaurantReservation.Database", "RestaurantReservation.Database\RestaurantReservation.Database.sqlproj", "{1F648562-823F-433B-A0AA-6C859197272D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F17D83E-ACAE-409D-9DAF-C7257F97A32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F17D83E-ACAE-409D-9DAF-C7257F97A32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F17D83E-ACAE-409D-9DAF-C7257F97A32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F17D83E-ACAE-409D-9DAF-C7257F97A32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C293E217-A9E7-430E-9675-94CFCE97A554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C293E217-A9E7-430E-9675-94CFCE97A554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C293E217-A9E7-430E-9675-94CFCE97A554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C293E217-A9E7-430E-9675-94CFCE97A554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65168BD4-4235-4E56-B205-9C708339339C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65168BD4-4235-4E56-B205-9C708339339C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65168BD4-4235-4E56-B205-9C708339339C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65168BD4-4235-4E56-B205-9C708339339C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DEF2221-CB39-4EDA-A776-B1E788B4D160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEF2221-CB39-4EDA-A776-B1E788B4D160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEF2221-CB39-4EDA-A776-B1E788B4D160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEF2221-CB39-4EDA-A776-B1E788B4D160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35844043-A2A0-490E-9144-81A4E248A190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35844043-A2A0-490E-9144-81A4E248A190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35844043-A2A0-490E-9144-81A4E248A190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35844043-A2A0-490E-9144-81A4E248A190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F648562-823F-433B-A0AA-6C859197272D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3036458C-DBD8-49F2-993B-554F69C615C2}
+	EndGlobalSection
+EndGlobal
