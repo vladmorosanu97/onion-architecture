@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RestaurantReservation.Infrastructure.Utils;
+using RestaurantReservation.IoC;
 
 namespace RestaurantReservation.API
 {
@@ -26,8 +27,9 @@ namespace RestaurantReservation.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = Configuration.GetConnectionString("ConnectionString");
+            var connectionString = Configuration.GetConnectionString("RestaurantReservationConnectionString");
             services.AddNHibernate(connectionString);
+            services.AddServices();
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 

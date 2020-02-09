@@ -10,6 +10,11 @@ namespace RestaurantReservation.Core.Common
         public static readonly Shape Square = new Shape(2, "Square table");
         public virtual string Name { get; }
 
+        protected Shape()
+        {
+
+        }
+
         private Shape(int id, string name)
         {
             Id = id;

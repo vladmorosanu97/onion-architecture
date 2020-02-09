@@ -1,45 +1,36 @@
-﻿using System.Linq;
+﻿using System.Configuration;
+using System.Linq;
+using Microsoft.Extensions.Configuration;
 using NHibernate;
 using RestaurantReservation.Core.Common;
+using RestaurantReservation.Core.RestaurantContext;
 using RestaurantReservation.DomainServices.Common;
 using RestaurantReservation.Infrastructure.Utils;
 
 namespace RestaurantReservation.Infrastructure.Common
 {
-    public abstract class Repository<T>:IRepository<T> where  T: AggregateRoot
+    public abstract class Repository<T>: IRepository<T> where  T: AggregateRoot
     {
-        private IMapperSession<T> _mapperSession;
+        private readonly IMapperSession<T> _mapperSession;
 
         protected Repository(IMapperSession<T> mapperSession)
         {
-            this._mapperSession = mapperSession;
+            _mapperSession = mapperSession;
         }
 
         public IQueryable<T> GetAll()
         {
-            _mapperSession.BeginTransaction();
             return _mapperSession.GetAll();
         }
 
-        public T GetById(long id)
+        public T GetById(int id)
         {
-            // _mapperSession.BeginTransaction();
-            // _mapperSession.GetAll();
-            // return // using (ISession session = SessionFactory.OpenSession())
-            // // {
-            // //     return session.Get<T>(id);
-            // // }
-            throw new System.NotImplementedException();
+            return _mapperSession.GetById(id);
         }
 
         public void Save(T aggregateRoot)
         {
-            using (ISession session = SessionFactory.OpenSession())
-            using (ITransaction transaction = session.BeginTransaction())
-            {
-                session.SaveOrUpdate(aggregateRoot);
-                transaction.Commit();
-            }
+            _mapperSession.Save(aggregateRoot);
         }
     }
 }

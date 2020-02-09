@@ -7,7 +7,7 @@ namespace RestaurantReservation.DomainServices.Common
     {
         IQueryable<T> GetAll();
 
-        T GetById(long id);
+        T GetById(int id);
         void Save(T aggregateRoot);
     }
 }
